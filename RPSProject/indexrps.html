@@ -5,9 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="rps.js"></script>
+    <link rel="stylesheet" href="rpsstyle.css">
 </head>
 <body>
-    //HELLOOO
+    <h1 class="gametitle">Can you beat the odds?</h1>
+    <div id="buttoncontainer">
+        <div class="card">
+            <button value="hunter" class="fa-solid fa-person-rifle icon"></button>
+            <h4 class="buttontext">HUNTER</h4>
+        </div>
+        <div class="card">       
+            <button value="ninja" class="fa-solid fa-user-ninja icon"></button>
+            <h4 class="buttontext">NINJA</h4>
+        </div> 
+        <div class="card">
+            <button value="hippo" class="fa-solid fa-hippo icon"></button>
+            <h4 class="buttontext">HIPPO</h4>
+        </div>
+        </div>
+    <div class="choiceresult">
+
+    </div>
+
+    <div class="instructions">
+        <h2 class="instructiontitle">GAME RULES!</h2>
+        <ul class="instructionlist">
+            <li>Hunter beats hippo</li>
+            <li>Ninja beats hunter</li>
+            <li>Hippo beats nija</li>
+        </ul>
+
+    </div>    
+
+    <div class="resultscontainer">
+        <div class="wholescorecard">
+            <h1 class="scoreCard">PLAYER</h1>
+            <h3 class="playerScore">0</h3>
+        </div>        
+        <div class="wholescorecard">
+            <h1 class="scoreCard">COMPUTER</h1>
+            <h3 class="computerScore">0</h3>
+        </div>    
+    </div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+                
+                <p class="modaltext"></p>
+                <span class="close">PLAY AGAIN?</span>
+        </div>
+      
+      </div>
+
+
+
 </body>
+<script src="https://kit.fontawesome.com/9b8669af55.js" crossorigin="anonymous"></script>
+<script src="rps.js"></script>
 </html>
