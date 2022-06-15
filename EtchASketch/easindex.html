@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="easstyle.css" />
+    <script src="easjs.js" defer></script>
+    <title>Etch-A-Sketch</title>
+  </head>
+  <body>
+    <div class="pageTitle">Etch-A-Sketch</div>
+    <div class="grid-container">
+      <div class="content-container"></div>
+    </div>
+    <div class="select-color">
+      <div class="colortext">Select your color first!</div>
+      <input type="color" id="colorpicker" class="picker" value="#002000" />
+    </div>
+    <div class="buttons">
+      <input
+        type="text"
+        onchange="userChangeSize(this.value)"
+        placeholder="Size of Board"
+        value="16"
+        id="sizeInput"
+      />
+
+      <button id="setSize">Set Size</button>
+
+      <button id="randomColor">Rainbow!</button>
+
+      <button class="resetbtn">Reset</button>
+      <button class="eraser">Eraser</button>
+    </div>
+  </body>
+</html>
